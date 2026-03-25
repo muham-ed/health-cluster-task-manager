@@ -1,0 +1,11 @@
+# 1. تثبيت الاعتماديات
+npm install
+
+# 2. إنشاء قاعدة البيانات
+psql -U postgres -f migrations/001-initial-schema.sql
+
+# 3. تشغيل الخادم
+npm run dev
+
+# 4. اختبار API
+curl http://localhost:3000/health

@@ -1,0 +1,40 @@
+health-cluster-task-management/
+├── .git/
+│   ├── hooks/
+│   ├── info/
+│   ├── objects/
+│   ├── refs/
+│   ├── config
+│   ├── description
+│   └── HEAD
+├── migrations/
+│   └── 001-initial-schema.sql
+├── src/
+│   ├── config/
+│   │   ├── database.js
+│   │   └── env.js ✅ جديد
+│   ├── models/
+│   │   ├── Cluster.js
+│   │   ├── Task.js
+│   │   ├── TaskHistory.js
+│   │   ├── User.js
+│   │   └── relations.js ✅ جديد
+│   ├── controllers/
+│   │   ├── authController.js ✅ جديد
+│   │   ├── clusterController.js
+│   │   └── taskController.js (محدث)
+│   ├── services/
+│   │   └── workflowService.js
+│   ├── middleware/
+│   │   ├── auth.js ✅ جديد
+│   │   └── validation.js ✅ جديد
+│   ├── routes/
+│   │   ├── auth.js ✅ جديد
+│   │   ├── clusters.js
+│   │   └── tasks.js
+│   └── utils/
+│       └── constants.js
+├── .env
+├── .gitignore
+├── package.json
+└── server.js (محدث)
